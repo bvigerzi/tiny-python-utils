@@ -3,8 +3,6 @@ import click
 
 
 @click.command()
-# @click.option('-p', '--pattern', prompt='A valid regex pattern', help='A valid regex pattern to expand')
-# @click.option('-f', '--file-name', default='expanded.txt', prompt='Name of file to export expanded regex', help='Name of file where expanded pattern will be written to')
 @click.option('-p', '--pattern', required=True, help='A valid regex pattern to expand')
 @click.option('-f', '--file-name', default='expanded.txt',  help='Name of file where expanded pattern will be written to. Defaults to expanded.txt')
 @click.option('-d', '--delimiter', default='\n', help='Delimiter used to seperate output. Defaults to newline char')
